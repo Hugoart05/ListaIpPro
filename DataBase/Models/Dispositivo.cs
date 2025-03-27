@@ -8,6 +8,11 @@ namespace DataBase.Models
 {
     public class Dispositivo
     {
+        public Dispositivo()
+        {
+            Erros = new List<ErroMinitoramento>();
+            DataCadastro = DateTime.Now;
+        }
         public int Id { get; set; }
         public string Ip { get; set; }
         public string Nome { get; set; }
